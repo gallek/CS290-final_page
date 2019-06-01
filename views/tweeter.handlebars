@@ -1,0 +1,13 @@
+<main class="twit-container">
+	{{#if page}}
+		{{#each twitt}}
+			{{>twit}}
+		{{/each}}
+	{{else}}
+		{{>twit}}	
+	{{/if}}
+</main>
+
+{{#if showModal}}
+	{{>createtwitmodal}}
+{{/if}}
