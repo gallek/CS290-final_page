@@ -44,15 +44,6 @@ function insertNewTwit(twitText, twitAuthor){
    var twitHTML = Handlebars.templates.twit(twitContext);
    var twitContainer = document.querySelector('.twit-container');
    twitContainer.insertAdjacentHTML('beforeend', twitHTML);
-
-
- /*  var twitTemplate= Handlebars.templates.twit;
-   var twitHTML= twitTemplate({
-	text: twitText,
-	author: twitAuthor
-   });
-   var twitContainer = document.querySelector('.twit-container');
-   twitContainer.insertAdjacentHTML('beforeend', twitHTML);*/
 }
 
 /***************************************************************************
